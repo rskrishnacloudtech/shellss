@@ -34,10 +34,12 @@ VALIDATE(){
 }
 
 # Checking that uer is sudo user or not.
-if [ $USERID -ne 0 ]
-then
-    echo -e "This current user $B '$USER' $N is not a sudo user. Please get the sudo access first or login with sudo user before installing packages."
-    exit 1
-else
-    echo -e "This current user $B '$USER' $N has the sudo access. You can proceed to install the packages."
-fi
+check_user(){
+    if [ $USERID -ne 0 ]
+    then
+        echo -e "This current user $B '$USER' $N is not a sudo user. Please get the sudo access first or login with sudo user before installing packages."
+        exit 1
+    else
+        echo -e "This current user $B '$USER' $N has the sudo access. You can proceed to install the packages."
+    fi
+}
