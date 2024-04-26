@@ -8,7 +8,7 @@ N="\e[0m"
 
 if [ -d $filepath ]    # Checks that directory is exists or not.
 then
-    if [ ${#files[@]} -gt 0 ]
+    if [ ${$files[@]} -gt 0 ]
     then
         rm -rf $files
         echo -e "$G $files are deleted $N"
@@ -16,7 +16,7 @@ then
         echo -e "$R $files are NOT available $N"
     fi
 
-    if [ ${#files[@]} -eq 0 ]
+    if [ ${$files[@]} -eq 0 ]
     then
         echo -e "$R $files are deleted successfully $N"
     fi
