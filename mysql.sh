@@ -1,8 +1,8 @@
 #!/bin/bash
 
-source ./common.sh
+source ./common.sh  # Sourcing the other file which is having a common code.
 
-check_user
+check_user  #Calling the function which is cheking the user type in another file.
 
 # Installing the mysql-server package.
 dnf install mysql-server -y &>> $LOGFILE
