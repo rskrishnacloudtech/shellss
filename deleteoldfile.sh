@@ -8,19 +8,14 @@ N="\e[0m"
 
 if [ -d $filepath ]    # Checks that directory is exists or not.
 then
-    if [ ${#files[@]} -gt 0 ]
-    then
-        rm -rf $files
-        echo -e "$G $files are deleted $N"
-    else
-        echo -e "$R $files are NOT available $N"
-    fi
-
-    files=($(find $filepath -name "*.html" -mtime +4))
-    if [ ${#files[@]} -eq 0 ]
-    then
-        echo -e "$G $files are deleted successfully $N"
-    fi
+    echo -e "$G $filepath directory exists $N"
 else
-    echo -e "$R $filepath directory is not found $N"
+    echo -e "$R $filepath director is not available $N"
+    exit 1
 fi
+
+while IFS= read -r line
+do
+    echo "Deleting files: $line"
+    rm -rf $line
+done <<< $files
