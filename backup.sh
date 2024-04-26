@@ -6,4 +6,4 @@ zipfile=/home/ec2-user/backup-$timstamp.zip
 #tofolder=/home/ec2-user/logs/
 #zip -r $zipfile $fromfolder | mv $zipfile $tofolder
 
-zip zipfile fromdir/zipfoder | mv zipfile todir/
+zip $zipfile fromdir/zipfoder | mv $zipfile todir/
