@@ -1,7 +1,7 @@
 #!/bin/bash
 
 filepath="/home/ec2-user/logs"
-files=$(find $filepath -name "*.log" -mtime +4)
+files=$(find $filepath -name "*.js" -mtime +4)
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
