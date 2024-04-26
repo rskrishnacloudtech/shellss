@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Get the current logged in user.
 USER=$(whoami)
 
@@ -11,7 +13,7 @@ LOGFILE=/tmp/$TIMESTAMP-$FILENAME.log
 echo "Please enter the DB password.. "          # ExpenseApp@1 is the password. 
 read -s mySQLPassword
 #mySQLPassword=ExpenseApp@1
-DBServerIP=172.31.80.220
+DBServerIP=172.31.18.209
 
 # Creating a color codes.
 R="\e[31m"
