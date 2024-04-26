@@ -11,14 +11,14 @@ then
     if [ ${#files[@]} -gt 0 ]
     then
         rm -rf $files
-        echo -e "$G $files are deleted successfully $N"
+        echo -e "$G $files are deleted $N"
     else
         echo -e "$R $files are NOT available $N"
     fi
 
     if [ ${#files[@]} -eq 0 ]
     then
-        echo "$files are deleted successfully"
+        echo -e "$R $files are deleted successfully $N"
     fi
 else
     echo -e "$R $filepath directory is not found $N"
