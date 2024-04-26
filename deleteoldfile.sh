@@ -15,5 +15,5 @@ then
         echo "$files are deleted successfully"
     fi
 else
-    echo -e "$R $Files are not deleted $N"
+    echo -e "$R $filepath directory is not found $N"
 fi
