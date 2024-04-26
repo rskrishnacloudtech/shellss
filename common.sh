@@ -23,6 +23,7 @@ B="\e[34m"
 N="\e[0m"
 
 # Function created to perform a validation on the result of the command execution.
+source ./mysql.sh
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
