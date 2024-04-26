@@ -1,6 +1,6 @@
 #!/bin/bash
 
-filepath="/home/ec2-user/logs"
+filepath="/home/ec2-user/los"
 files=$(find $filepath -name "*.js" -mtime +4)
 R="\e[31m"
 G="\e[32m"
