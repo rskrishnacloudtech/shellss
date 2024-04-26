@@ -10,6 +10,10 @@ if [ -d $filepath ]    # Checks that directory is exists or not.
 then
     rm -rf $files
     echo -e "$G $files are deleted successfully $N"
+    if [ ! -d $filepath/$files]
+    then
+        echo "Files are deleted successfully"
+    fi
 else
     echo -e "$R $Files are not deleted $N"
 fi
