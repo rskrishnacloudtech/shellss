@@ -16,7 +16,7 @@ then
         echo -e "$R $files are NOT available $N"
     fi
 
-    if [ ! -d $filepath/$files ]
+    if [ ${#files[@]} -eq 0 ]
     then
         echo "$files are deleted successfully"
     fi
