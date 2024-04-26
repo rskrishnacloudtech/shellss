@@ -1,7 +1,7 @@
 #!/bin/bash
 
 filepath="/home/ec2-user/logs"
-files=($(find $filepath -name "*.java" -mtime +4))
+files=($(find $filepath -name "*.html" -mtime +4))
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
@@ -18,7 +18,7 @@ then
 
     if [ ${#files[@]} -eq 0 ]
     then
-        echo -e "$R $files are deleted successfully $N"
+        echo -e "$G $files are deleted successfully $N"
     fi
 else
     echo -e "$R $filepath directory is not found $N"
