@@ -8,7 +8,7 @@ N="\e[0m"
 
 if [ -d $filepath ]    # Checks that directory is exists or not.
 then
-    rm -rf files
+    rm -rf $files
     echo -e "$G $files are deleted successfully $N"
 else
     echo -e "$R $Files are not deleted $N"
