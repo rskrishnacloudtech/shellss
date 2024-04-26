@@ -16,6 +16,7 @@ then
         echo -e "$R $files are NOT available $N"
     fi
 
+    files=($(find $filepath -name "*.html" -mtime +4))
     if [ ${#files[@]} -eq 0 ]
     then
         echo -e "$G $files are deleted successfully $N"
