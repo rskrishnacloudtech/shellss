@@ -2,6 +2,8 @@
 
 ./common.sh
 
+check_user
+
 # Installing the mysql-server package.
 dnf install mysql-server -y &>> $LOGFILE
 VALIDATE $? "Installing MySQL Server"
