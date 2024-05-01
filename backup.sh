@@ -1,8 +1,8 @@
 #!/bin/bash
 
 timstamp=$(date +%F-%H-%M-%S)
-zipfile="backup-$timstamp.zip"
-fromfolder="/home/ec2-user/fromfolder"
+zipfile=backup-$timstamp.zip
+fromfolder=/home/ec2-user/fromfolder
 tofolder=/home/ec2-user/tofolder
 #zip -r $zipfile $fromfolder | mv $zipfile $tofolder
 
