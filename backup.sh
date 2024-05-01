@@ -7,5 +7,5 @@ tofolder=/home/ec2-user/tofolder
 #zip -r $zipfile $fromfolder | mv $zipfile $tofolder
 
 #zip fromdir/backup-date.zip fromdir/zipfoder | mv fromdir/backup-date.zip todir/
-zip $tofolder/$zipfile $fromfolder/zipfoder
+zip $tofolder/$zipfile $fromfolder
 #zip zipfile.zip ~/fromdir/zipfoder | mv zipfile.zip ~/todir/
